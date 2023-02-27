@@ -1,4 +1,4 @@
-import ButtonStyled from "../ButtonStyled";
+import ButtonStyled from "./ButtonStyled";
 
 interface ButtonProps {
   text: string;
@@ -7,9 +7,7 @@ interface ButtonProps {
 const Button = ({ text }: ButtonProps): JSX.Element => {
   return (
     <>
-      <ButtonStyled value="Sign up" type="submit">
-        {text}
-      </ButtonStyled>
+      <ButtonStyled type="submit">{text}</ButtonStyled>
     </>
   );
 };
